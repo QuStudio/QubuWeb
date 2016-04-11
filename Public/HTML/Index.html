@@ -20,7 +20,7 @@
     }
 </style>
 <body>
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -56,7 +56,6 @@
                     <input type="text" class="form-control" id="word" placeholder="Введите слово">
                 </div>
                 <button type="submit" class="btn btn-primary" style="background-color: #398439">Submit</button>
-            </form>
             </form>
         </div>
     </div>
@@ -121,21 +120,62 @@
                     <th><button type="button" class="btn btn-warning">Learn More</button></th>
                     <th><button type="button" class="btn btn-success">Suggest</button> </th>
                 </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Anna</td>
+                    <td>Pitt</td>
+                    <td>35</td>
+                    <th><button type="button" class="btn btn-warning">Learn More</button></th>
+                    <th><button type="button" class="btn btn-success">Suggest</button> </th>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Anna</td>
+                    <td>Pitt</td>
+                    <td>35</td>
+                    <th><button type="button" class="btn btn-warning">Learn More</button></th>
+                    <th><button type="button" class="btn btn-success">Suggest</button> </th>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Anna</td>
+                    <td>Pitt</td>
+                    <td>35</td>
+                    <th><button type="button" class="btn btn-warning">Learn More</button></th>
+                    <th><button type="button" class="btn btn-success">Suggest</button> </th>
+                </tr>
                 </tbody>
             </table>
         </div>
     </div>
-    <hr />
-    <footer>
-        <p style="alignment: center">&copy; 2016 - Tkachenko Yevgeniy, Stanislav Vylegzhanin, Marina Raykova, Oleg Dreyman </p>
-    </footer>
-</div>
-<nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-        <div class="navbar-fixed-bottom">
-            <button type="button" class="btn btn-default"><a href="www.facebook.com"></a></button>
+
+    <!--This is a sticky bottom footer just in case
+
+    <nav class="navbar navbar-inverse navbar-fixed-bottom">
+        <div class="container">
+            Hello
+        </div>
+    </nav>--->
+
+    <!--- This is a short version of a footer also just in case
+
+    <div class="navbar navbar-inverse navb" role="navigation">
+        <div class="container">
+            <div class="navbar-text pull-left">
+                <p>Bootstrap 2016</p>
+            </div>
         </div>
     </div>
-</nav>
+    -->
+
+</div>
+<div class="navbar navbar-inverse navb" role="navigation">
+    <div class="container">
+        <button type="button" class="btn btn-default navbar-btn" id="linkbut"></button>
+        <div class="navbar-text pull-right">
+            <p>Copyright</p>
+        </div>
+    </div>
+</div>
 </body>
 </html>
