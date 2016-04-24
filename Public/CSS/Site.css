@@ -9,12 +9,22 @@ html{
 
 .socialbutton{
     border: 1px solid #3c3c3c;
+    text-align: center;
+    text-decoration: none;
+    font-weight: normal;
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-image: url("../Icons/facebook1.png");
+    background-image: url("../Icons/Icons/icons_1/Icons_1_android.png");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 105%;
+}
+.socialbutton:focus{
+    outline: none;
+}
+.socialbutton:active{
+    background-image: url("../Icons/Icons/Icons_3/Icons3_android.png");
+    outline: none !important;
 }
 td, th{
     text-align: center;

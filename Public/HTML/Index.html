@@ -11,197 +11,123 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script></head>
     <link rel="stylesheet" type="text/css" href="../CSS/Site.css">
-<style>
-    @import "http://webfonts.ru/import/bitter.css";
-    .navbar{
-        font-family: 'Bitter';
-    }
-    .container{
-        font-family: 'Bitter';
-    }
-    textarea{
-        width: 100%;
-        height: 500px;
-        resize: none;
-    }
-</style>
+    <style>
+        @import "http://webfonts.ru/import/bitter.css";
+        .navbar{
+            font-family: 'Bitter';
+        }
+        .container{
+            font-family: 'Bitter';
+        }
+        textarea{
+            width: 100%;
+            height: 500px;
+            resize: none;
+        }
+    </style>
 <body>
-<nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Qubulyar</a>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Qubulyar</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Log in</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact us</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-            </ul>
+    </nav>
+    <div class="container body-content"  style="margin-top: 70px">
+        <div class="container">
+            <div class="jumbotron">
+                <h1>Вокабуляр</h1>
+                <br>
+                <p>Вокабуляр это самый большой толковый словарь афоризмов.</p>
+            </div>
+            <div class="input-group">
+                <input type="text" class="form-control input-lg">
+                <span class="input-group-btn">
+                    <button class="btn btn-success btn-lg" style="background-color: #398439;">Search</button>
+                </span>
+            </div>
         </div>
-    </div>
-</nav>
-<div class="container body-content"  style="margin-top: 70px">
-    <div class="container">
-        <div class="jumbotron">
-            <h1>Вокабуляр</h1>
-            <br>
-            <p>Вокабуляр это самый большой толковый словарь афоризмов.</p>
-        </div>
-        <div class="input-group">
-            <input type="text" class="form-control input-lg">
-            <span class="input-group-btn">
-                <button class="btn btn-success btn-lg" style="background-color: #398439;">Search</button>
-            </span>
-        </div>
-    </div>
-    <div class="container">
-        <h2>HUB</h2>
-        <div>
-            <table class="table table-hover table-bordered">
-                <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>Firstname</th>
-                        <th >Lastname</th>
-                        <th>Age</th>
-                    </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Anna</td>
-                    <td>Pitt</td>
-                    <td>35</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Anna</td>
-                    <td>Pitt</td>
-                    <td>35</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Anna</td>
-                    <td>Pitt</td>
-                    <td>35</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Anna</td>
-                    <td>Pitt</td>
-                    <td>35</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Anna</td>
-                    <td>Pitt</td>
-                    <td>35</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Anna</td>
-                    <td>Pitt</td>
-                    <td>35</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Anna</td>
-                    <td>Pitt</td>
-                    <td>35</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Anna</td>
-                    <td>Pitt</td>
-                    <td>35</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Anna</td>
-                    <td>Pitt</td>
-                    <td>35</td>
-                </tr>
-                </tbody>
-            </table>
-            <div class="row">
-                <div class="col-sm-5">
-                    <div class="Table_info">Showed x of y</div>
-                </div>
-                <div class="col-sm-7">
-                    <ul class="pagination pull-right" style="margin-top: -10px">
-                        <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Previous">
-                                <span aria-hidden="true">&laquo;</span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                        </li>
-                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item"><a class="page-link" href="#">4</a></li>
-                        <li class="page-item"><a class="page-link" href="#">5</a></li>
-                        <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Next">
-                                <span aria-hidden="true">&raquo;</span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </li>
-                    </ul>
+        <div class="container">
+            <h2>HUB</h2>
+            <div>
+                <table class="table table-hover table-bordered" id="users">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Firstname</th>
+                            <th >Lastname</th>
+                            <th>Age</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+                <div class="row">
+                    <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+                        <div class="Table_info">Showed x of y</div>
+                    </div>
+                    <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+                        <ul class="pagination pull-right" style="margin-top: -10px">
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item"><a class="page-link" href="#">5</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <!--This is a sticky bottom footer just in case
-
-    <nav class="navbar navbar-inverse navbar-fixed-bottom">
-        <div class="container">
-            Hello
-        </div>
-    </nav>--->
-
-    <!--- This is a short version of a footer also just in case
-
-    <div class="navbar navbar-inverse navb" role="navigation">
-        <div class="container">
-            <div class="navbar-text pull-left">
-                <p>Bootstrap 2016</p>
+    <footer class="modal-footer" style="background-color: #080808">
+        <section id="mainFooter">
+            <div class="footerWidget text-center">
+                <h1 class="bigTitle text-center" style="color: #dcdcdc">13heavyweather@gmail.com</h1>
             </div>
-        </div>
-    </div>
-    -->
-
-</div>
-<footer class="modal-footer" style="background-color: #080808">
-    <section id="mainFooter">
-        <div class="footerWidget text-center">
-            <h1 class="bigTitle text-center" style="color: #dcdcdc">13heavyweather@gmail.com</h1>
-        </div>
-        <div class="social-section text-center form-inline" style="margin-top: 20px; margin-bottom: 0px">
-            <button type="button" class="btn socialbutton"></button>
-            <button type="button" class="btn socialbutton"></button>
-            <button type="button" class="btn socialbutton"></button>
-            <button type="button" class="btn socialbutton"></button>
-        </div>
-    </section>
-    <section id="footerRights" style="background-color: #222222; margin-top: 30px; margin-left: -14px; margin-right: -14px; margin-bottom: -15px;">
-        <div class="container" style="padding-bottom: 15px">
-            <div class="col-md-12 text-center">
-                <p style="color: #dcdcdc; margin-top: 30px" class="text-center">Copyright &copy; 2016</p>
+            <div class="social-section text-center form-inline" style="margin-top: 20px; margin-bottom: 0px">
+                <button type="button" class="btn socialbutton"></button>
+                <button type="button" class="btn socialbutton"></button>
+                <button type="button" class="btn socialbutton"></button>
+                <button type="button" class="btn socialbutton"></button>
             </div>
-        </div>
-    </section>
-</footer>
+        </section>
+        <section id="footerRights" style="background-color: #222222; margin-top: 30px; margin-left: -14px; margin-right: -14px; margin-bottom: -15px;">
+            <div class="container" style="padding-bottom: 15px">
+                <div class="col-md-12 text-center">
+                    <p style="color: #dcdcdc; margin-top: 30px" class="text-center">Copyright &copy; 2016</p>
+                </div>
+            </div>
+        </section>
+    </footer>
 
-<script src="../JS/Other.js"></script>
+    <script src="../JS/Other.js"></script>
 </body>
 </html>
