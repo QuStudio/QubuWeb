@@ -4,13 +4,13 @@
     <title>Qubulyar</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/CSS/csshub/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="/CSS/csshub/bootstrap-theme.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script></head>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
     <link rel="stylesheet" type="text/css" href="../CSS/Site.css">
+</head>
+
     <style>
         @import "http://webfonts.ru/import/bitter.css";
         .navbar{
@@ -23,6 +23,9 @@
             width: 100%;
             height: 500px;
             resize: none;
+        }
+        body{
+            background-color: #fafafa;
         }
     </style>
 <body>
@@ -57,51 +60,80 @@
                 <p>Вокабуляр это самый большой толковый словарь афоризмов.</p>
             </div>
             <div class="input-group">
-                <input type="text" class="form-control input-lg">
+                <input type="text" class="form-control input-lg" placeholder="input" name="searchWord">
                 <span class="input-group-btn">
-                    <button class="btn btn-success btn-lg" style="background-color: #398439;">Search</button>
+                    <button class="btn btn-success btn-lg" id="liveSearch" style="background-color: #398439;">Search</button>
                 </span>
             </div>
         </div>
         <div class="container">
             <h2>HUB</h2>
-            <div>
-                <table class="table table-hover table-bordered" id="users">
-                    <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>Firstname</th>
-                            <th >Lastname</th>
-                            <th>Age</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                    </tbody>
-                </table>
-                <div class="row">
-                    <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
-                        <div class="Table_info">Showed x of y</div>
+            <div class="row" style="margin-top: 10px; margin-bottom: 10px">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" class="wrapper">
+                        <button data-toggle="collapse" href="#collapse1" type="button" class="btn-lg btn-block btn-primary blocks">Apple</button>
                     </div>
-                    <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
-                        <ul class="pagination pull-right" style="margin-top: -10px">
-                            <li class="page-item">
-                                <a class="page-link" href="#" aria-label="Previous">
-                                    <span aria-hidden="true">&laquo;</span>
-                                    <span class="sr-only">Previous</span>
-                                </a>
-                            </li>
-                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item"><a class="page-link" href="#">4</a></li>
-                            <li class="page-item"><a class="page-link" href="#">5</a></li>
-                            <li class="page-item">
-                                <a class="page-link" href="#" aria-label="Next">
-                                    <span aria-hidden="true">&raquo;</span>
-                                    <span class="sr-only">Next</span>
-                                </a>
-                            </li>
-                        </ul>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" class="wrapper">
+                        <button type="button" class="btn-lg btn-block btn-primary blocks">Samsung</button>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" class="wrapper">
+                        <button type="button" class="btn-lg btn-primary btn-block blocks">Sony</button>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" class="wrapper">
+                        <button type="button" class="btn-lg btn-primary btn-block blocks">Sony</button>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" class="wrapper">
+                        <button type="button" class="btn-lg btn-primary btn-block blocks">Sony</button>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" class="wrapper">
+                        <button type="button" class="btn-lg btn-primary btn-block blocks">Sony</button>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" class="wrapper">
+                        <button type="button" class="btn-lg btn-primary btn-block blocks">Sony</button>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" class="wrapper">
+                        <button type="button" class="btn-lg btn-primary btn-block blocks">Sony</button>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" class="wrapper">
+                        <button type="button" class="btn-lg btn-block btn-primary blocks">Apple</button>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" class="wrapper">
+                        <button type="button" class="btn-lg btn-block btn-primary blocks">Samsung</button>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" class="wrapper">
+                        <button type="button" class="btn-lg btn-primary btn-block blocks">Sony</button>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" class="wrapper">
+                        <button type="button" class="btn-lg btn-primary btn-block blocks">Sony</button>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" class="wrapper">
+                        <button type="button" class="btn-lg btn-primary btn-block blocks">Sony</button>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" class="wrapper">
+                        <button type="button" class="btn-lg btn-primary btn-block blocks">Sony</button>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" class="wrapper">
+                        <button type="button" class="btn-lg btn-primary btn-block blocks">Sony</button>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" class="wrapper">
+                        <button type="button" class="btn-lg btn-primary btn-block blocks">Sony</button>
+                    </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" role="dialog" tabindex="-1">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Modal Header</h4>
+                        </div>
+                        <div class="modal-body" id="123">
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -129,5 +161,22 @@
     </footer>
 
     <script src="../JS/Other.js"></script>
+    <script>
+        $(".blocks").click(function(){
+            $("#myModal").modal();
+            document.getElementById("123").innerHTML = $(this).text();
+        });
+    </script>
+    <script>
+        $("#liveSearch").click(function(){
+            var search = document.getElementsByName('searchWord').val().toLowerCase();
+            $('.HUB').children('div').hide();
+            /*$('.blocks').each(function(){
+                if(search == this.val().toLocaleLowerCase()){
+                    $(this).show();
+                };
+            }); */
+        });
+    </script>
 </body>
 </html>
